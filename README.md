@@ -20,6 +20,22 @@ npm run preview  # sirve la versión de dist/
 
 Para abrir directamente una pestaña, agregá `#gas`, `#sueldos`, `#seguro` o `#libre` a la URL.
 
+## Notebooks de Python (Google Colab)
+
+En [`notebooks/`](notebooks/) hay un notebook por ejercicio que resuelve lo mismo que la web con
+pandas y statsmodels, y comprueba cada resultado contra los valores de la cátedra (líneas ✔ / ✘).
+Corren en la nube de Google, así que no hace falta instalar Python.
+
+| Ejercicio | Abrir |
+|---|---|
+| 1. Demanda de gas: regresión lineal múltiple, combinaciones de predictores y supuestos | [![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/fcaceres-create/caece-aprendizaje-artificial-u3-datamining/blob/main/notebooks/01_demanda_gas_regresion_lineal.ipynb) |
+| 2. Sueldos: valores atípicos, leverage y distancia de Cook | [![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/fcaceres-create/caece-aprendizaje-artificial-u3-datamining/blob/main/notebooks/02_sueldos_valores_atipicos.ipynb) |
+| 3. Seguro: regresión logística, matriz de confusión, ROC y separación perfecta | [![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/fcaceres-create/caece-aprendizaje-artificial-u3-datamining/blob/main/notebooks/03_seguro_regresion_logistica.ipynb) |
+
+Los notebooks leen los datos de [`notebooks/datos/`](notebooks/datos/), que también incluye
+`EjerciciosRegresion.xlsx` con las tres hojas. Para guardar tus cambios en Colab usá
+**Archivo → Guardar una copia en Drive**.
+
 ## Publicar en un hosting
 
 `npm run build` genera la carpeta `dist/`, que es un sitio estático: no necesita servidor ni base
