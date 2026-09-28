@@ -1,0 +1,22 @@
+import { datasetFromText } from './parse';
+
+/** Ejercicio 2: sueldo (en miles) según experiencia, estudios y sexo. */
+export const ejercicio2 = datasetFromText(
+  ['Sueldo', 'Experiencia', 'Estudios', 'Sexo'],
+  `
+2745,5.5,4,F
+3025,9,4,M
+2945,4,5,F
+2950,8,4,M
+2875,9.5,5,M
+2775,3,4,F
+2800,7,3,F
+2635,1.5,4.5,F
+3250,8.5,5,M
+3000,7.5,6,F
+2800,9.5,2,M
+2680,6,2,F
+2750,32.5,4,M
+2625,1.5,4.5,M
+`,
+);
